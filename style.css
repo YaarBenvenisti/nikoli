@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Imperial Normal 500";
+    src: url("fonts/imperial-normal-500.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Minimal Mono Bold";
+    src: url("fonts/minimal-mono-bold.woff2") format("woff2");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    
+}
+
+article{
+    max-width: 85%;
+    margin: 0px auto;
+}
+
+
+h1 {
+    font-family: "Minimal Mono Bold";
+    padding: 50px 0px 0px 0px;
+    margin: -270px 0px 70px 0px;
+    line-height: 2.1em;
+    z-index: 2;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 11.8vw;
+}
+
+#title {
+    margin-top: -150px;
+}
+
+h2 {
+    font-family: "Minimal Mono Bold";
+    font-size: 4em;
+    text-align: justify;
+    letter-spacing: 0.1em;
+}
+
+p {
+    font-family: "Imperial Normal 500";
+    font-size: 1.4em;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+hr {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.p_left {
+    max-width: 50%;
+    margin-bottom: 0px;
+}
+
+.p_right {
+    max-width: 50%;
+    display: inline-block;
+    position: relative;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.mid_title {
+    max-width: 100%;
+    font-size: 2.1em;
+    margin-left: 4px;
+    text-align: justify;
+    text-align-last: left;
+    letter-spacing: 0.5px;
+}
+
+#cover {
+    display: block;
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 100%;
+    z-index: -1;
+}
+
+#author {
+    font-size: 1em;
+    font-family: "Imperial Normal 500";
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+#subtitle {
+    max-width: 85%;
+    font-size: 2.1em;
+    margin-top: -40px;
+    margin-left: 4px;
+    text-align: justify;
+    text-align-last: left;
+    letter-spacing: 0.5px;
+}
+
+#h2_100 {
+    letter-spacing: 9px;
+}
+
