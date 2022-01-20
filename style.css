@@ -8,6 +8,10 @@
     src: url("fonts/minimal-mono-bold.woff2") format("woff2");
 }
 
+@-webkit-keyframes test {
+    60% {letter-spacing: 0.015em;}
+}
+
 * {
     box-sizing: border-box;
 }
@@ -32,7 +36,10 @@ h1 {
     z-index: 2;
     display: inline-block;
     overflow: hidden;
-    font-size: 11.8vw;
+    font-size: 11.5vw;
+    -webkit-animation: test 4s infinite;
+    animation: test 4s infinite;
+    letter-spacing: 0.02em;
 }
 
 #title {
@@ -41,21 +48,24 @@ h1 {
 
 h2 {
     font-family: "Minimal Mono Bold";
-    font-size: 4em;
+    font-size: 4.5em;
+    letter-spacing: 7px;
     text-align: justify;
-    letter-spacing: 0.1em;
+    -webkit-animation: test 4s infinite;
+    animation: test 4s infinite;
 }
 
 p {
     font-family: "Imperial Normal 500";
-    font-size: 1.4em;
-    text-align: justify;
-    letter-spacing: 0.5px;
+    font-size: 1.6em;
+    text-align: left;
+    line-height: 1.2em;
+    padding: 0px;
 }
 
-hr {
-    padding: 0px;
-    margin: 0px;
+u {
+    border-bottom: black dotted 2px;
+    text-decoration: none;
 }
 
 
@@ -76,6 +86,38 @@ hr {
 
 .flex {
     display: flex;
+}
+
+.flex_img {
+    display: flex;
+    
+}
+
+.flex_img img {
+    position: absolute;
+    top: 230%;
+    right: -5.5%;
+    align-self: center;
+    z-index: -5;
+}
+
+.author div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 250px;
+    z-index: 3;
+}
+
+.author p {
+    font-size: 1.2em;
+    text-align: center;
+    padding:4px 12px;
+    margin: 0px;
+    border: black solid 1.2px;
+    position: relative;
+    left: 320px;
+    top: 15px;
 }
 
 .mid_title {
@@ -103,17 +145,29 @@ hr {
     display: inline-block;
 }
 
+
 #subtitle {
     max-width: 85%;
     font-size: 2.1em;
-    margin-top: -40px;
+    margin-top: -70px;
     margin-left: 4px;
     text-align: justify;
     text-align-last: left;
     letter-spacing: 0.5px;
 }
 
-#h2_100 {
-    letter-spacing: 9px;
+#tatamibari {
+    position: relative;
+    left: -15%;
+    align-self: center;
+    z-index: -5;
 }
+
+#tile_1 {
+    position: absolute;
+    left: 44%;
+    top: 550%;
+    z-index: -10;
+}
+
 
