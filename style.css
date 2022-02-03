@@ -57,6 +57,18 @@ nav p {
     margin-left: 2%;
 }
 
+a:link {
+    color: black;
+    text-decoration: none;
+    cursor: cell;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+    cursor: cell;
+}
+
 
 
 .issue {
@@ -188,7 +200,7 @@ u {
 }
 
  .author {
-    position: relative;
+    position: absolute;
     left: 43%;
     bottom: -20%;
 }
