@@ -8,6 +8,16 @@
     src: url("fonts/minimal-mono-bold.woff2") format("woff2");
 }
 
+@font-face {
+    font-family: "Neuve-Book";
+    src: url("fonts/nm-book.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Neuve-SBI";
+    src: url("fonts/nm-sbi.woff2") format("woff2");
+}
+
 @keyframes h1 {
     60% {letter-spacing: 0.5em;}
 }
@@ -47,6 +57,12 @@ nav p {
     margin-left: 2%;
 }
 
+
+
+.issue {
+    position: absolute;
+    left: 0%;
+}
 
 h1 {
     font-family: "Minimal Mono Bold";
@@ -116,8 +132,8 @@ u {
 }
 
 #subtitle_1 {
-    width: 20%;
-    left: -4%;
+    width: 30%;
+    left: -1%;
     margin-top: -28%;
 }
 
@@ -172,18 +188,23 @@ u {
 }
 
  .author {
-    position: absolute;
+    position: relative;
     left: 43%;
     bottom: -20%;
 }
 
 
 .author p {
-    font-size: 1.3em;
+    font-family: "Neuve-SBI";
+    font-size: 1em;
     text-align: center;
     line-height: 0.8em;
     padding: 4px 12px;
     margin: 0px;
+}
+
+#author_3 {
+    font-family: "Neuve-Book";
 }
 
 .mid_title {
@@ -220,6 +241,9 @@ u {
     font-size: 1.2em;
     width: 40%;
     top: 50%;
+    right: 2%;
+    z-index: -1;
+    text-decoration: underline #5aff00;
 }
 
 .notes_img {
@@ -230,9 +254,11 @@ u {
 
 #nyt {
     display: inline-block;
+    width: 30%;
     position: relative;
     margin-top: 1%;
-    left: 20%;
+    left: 35%;
+    z-index: -1;
 }
 
 #subtitle_tiles_1 img {
@@ -259,11 +285,12 @@ u {
 
 
 #cover {
-    display: block;
-    margin: -1.8% auto;
+    display: inline-block;
+    margin-top: -1.6%;
+    margin-left: 40%;
     padding: 0px;
     max-width: 100%;
-    z-index: 10;
+    z-index: 200;
 }
 
 
