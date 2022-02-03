@@ -8,12 +8,22 @@
     src: url("fonts/minimal-mono-bold.woff2") format("woff2");
 }
 
-@-webkit-keyframes test {
+@keyframes h1 {
+    60% {letter-spacing: 0.5em;}
+}
+
+@keyframes h2 {
     60% {letter-spacing: 0.015em;}
 }
 
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
 * {
     box-sizing: border-box;
+    cursor: crosshair;
 }
 
 body {
@@ -27,33 +37,47 @@ article{
     margin: 0px auto;
 }
 
+nav {
+    display: flex;
+}
+
+nav p {
+    font-family: "Minimal Mono";
+    font-size: 1em;
+    margin-left: 2%;
+}
+
 
 h1 {
     font-family: "Minimal Mono Bold";
-    padding: 50px 0px 0px 0px;
-    margin: -270px 0px 70px 0px;
-    line-height: 2.1em;
     z-index: 2;
     display: inline-block;
     overflow: hidden;
-    font-size: 11.5vw;
-    -webkit-animation: test 4s infinite;
-    animation: test 4s infinite;
-    letter-spacing: 0.02em;
+    font-size: 14vw;
+    letter-spacing: 0.5em;
+    position: relative;
+    left: -10%;
+    padding: 2%;
+    margin: 0%;
+    line-height: 0.8em;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 3px black;
+    
 }
 
-#title {
-    margin-top: -150px;
-}
+
 
 h2 {
     font-family: "Minimal Mono Bold";
     font-size: 4.5em;
     letter-spacing: 7px;
     text-align: justify;
-    -webkit-animation: test 4s infinite;
-    animation: test 4s infinite;
+    animation: h2 4s infinite;
 }
+
+
+
 
 p {
     font-family: "Imperial Normal 500";
@@ -66,6 +90,44 @@ p {
 u {
     border-bottom: black dotted 2px;
     text-decoration: none;
+}
+
+.subtitle {
+    max-width: 100%;
+    font-size: 1.5em;
+    margin-top: -19.5%;
+    margin-left: 7%;
+    text-align: left;
+    text-align-last: left;
+    position: relative;
+}
+
+.subtitle p {
+    line-height: 1.2em;
+}
+
+
+
+.subtitle_1 {
+    position: relative;
+    width: 60%;
+    left: 5%;
+    margin-bottom: 20%;
+}
+
+#subtitle_1 {
+    width: 20%;
+    left: -4%;
+    margin-top: -28%;
+}
+
+
+.subtitle_2 {
+    position: relative;
+    width: 60%;
+    left: 30%;
+    top: 60%;
+    margin-bottom: 20%;
 }
 
 
@@ -86,10 +148,14 @@ u {
 
 .flex {
     display: flex;
+    position: relative;
+    align-items: center;
 }
 
 .flex_img {
     display: flex;
+    margin-top: 20%;
+    position: relative;
     
 }
 
@@ -101,23 +167,23 @@ u {
     z-index: -5;
 }
 
-.author div {
-    display: flex;
-    justify-content: center;
+.title {
     position: relative;
-    bottom: 250px;
-    z-index: 3;
 }
 
+ .author {
+    position: absolute;
+    left: 43%;
+    bottom: -20%;
+}
+
+
 .author p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: center;
-    padding:4px 12px;
+    line-height: 0.8em;
+    padding: 4px 12px;
     margin: 0px;
-    border: black solid 1.2px;
-    position: relative;
-    left: 320px;
-    top: 15px;
 }
 
 .mid_title {
@@ -129,21 +195,78 @@ u {
     letter-spacing: 0.5px;
 }
 
-#cover {
-    display: block;
-    margin: 0px auto;
-    padding: 0px;
-    max-width: 100%;
-    z-index: -1;
+.tentai_img {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.hollow {
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+.clicks {
+    color: white;
+    background-color: black;
+    cursor: cell;
+}
+
+.notes {
+    font-family: "Imperial Normal 500";
+    display: none;
+    position: absolute;
+    line-height: 1.2em ;
+    font-size: 1.2em;
+    width: 40%;
+    top: 50%;
+}
+
+.notes_img {
+    position: absolute;
+    display: none;
+    left: 8%;
+}
+
+#nyt {
+    display: inline-block;
+    position: relative;
+    margin-top: 1%;
+    left: 20%;
+}
+
+#subtitle_tiles_1 img {
+    position: absolute;
+    top: 8%;
+    left: 20%;
+}
+
+
+
+#japan {
+    animation: h1 4s infinite;
+    letter-spacing: 0.29em;
+    color: black;
 }
 
 #author {
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: "Imperial Normal 500";
     padding: 0px;
     margin: 0px;
     display: inline-block;
 }
+
+
+#cover {
+    display: block;
+    margin: -1.8% auto;
+    padding: 0px;
+    max-width: 100%;
+    z-index: 10;
+}
+
+
 
 
 #subtitle {
@@ -156,18 +279,31 @@ u {
     letter-spacing: 0.5px;
 }
 
+.blue_word {
+    color: blue;
+    cursor: cell;
+}
+
+
 #tatamibari {
-    position: relative;
-    left: -15%;
-    align-self: center;
-    z-index: -5;
+    position: absolute;
+    top: 8%;
+    left: -20%;
+    
+}
+
+#tatamibari:hover {
+    animation: slide 2s forwards;
+    animation-delay: 0.5s;
+    cursor: cell;
 }
 
 #tile_1 {
     position: absolute;
-    left: 44%;
-    top: 550%;
-    z-index: -10;
+    left: 10%;
+    top: 10%;
+    z-index: 5;
 }
+
 
 
